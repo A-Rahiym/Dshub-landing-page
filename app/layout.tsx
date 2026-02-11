@@ -13,6 +13,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'DSHub Internship - Start Your Tech Career',
   description: 'Join DSHub Internship - a structured program where you work on real projects, collaborate with a team, receive guidance from mentors.',
+  icons:"/Logo.png",
 }
 
 export const viewport: Viewport = {

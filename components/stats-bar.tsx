@@ -29,22 +29,22 @@ export function StatsBar() {
   }, [])
 
   return (
-    <section id="stats-section" className="bg-primary-light-blue py-12 px-4 sm:px-6 lg:px-8">
-      <div className="w-full">
-        <div className="grid md:grid-cols-3 gap-8 md:gap-4">
+    <section id="stats-section" className="bg-primary-light-blue py-8 sm:py-10 md:py-12 lg:py-16 px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-4 lg:gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
               className="text-center"
             >
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1 sm:mb-2">
                 {stat.isSymbol ? (
                   '∞'
                 ) : (
                   <Counter endNumber={stat.endNumber} isVisible={isVisible} />
                 )}
               </div>
-              <p className="text-base sm:text-lg text-blue-50 font-medium">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-blue-50 font-medium">
                 {stat.label}
               </p>
             </div>
