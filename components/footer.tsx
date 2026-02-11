@@ -42,7 +42,7 @@ export function Footer() {
                 About DSHub Internship
               </h3>
               <p className="text-xs sm:text-sm md:text-base text-blue-100 leading-relaxed">
-                A structured tech internship program combining real projects, mentor guidance, and hands-on experience to launch your career in technology.
+                 A structured tech internship program combining real projects, mentor guidance, and hands-on experience to launch your career in technology.
               </p>
             </div>
 
