@@ -52,7 +52,7 @@ export function WhyJoinSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               {/* Subtle background shape */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 z-10" />
 
