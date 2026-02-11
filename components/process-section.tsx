@@ -93,6 +93,7 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Timeline Layout */}
+        <div ref={containerRef}>
           {/* Timeline - Left Side */}
           <motion.div
             className="relative"
@@ -141,11 +142,8 @@ export function ProcessSection() {
                     <motion.div
                       className="md:hidden mb-3 w-12 h-12 rounded-full bg-gradient-to-br from-primary-light-blue to-blue-400 flex items-center justify-center text-white font-bold text-lg border-3 border-white shadow-md"
                       initial={{ scale: 0, rotate: -180 }}
-                      animate={
-                        isInView
-                          ? { scale: 1, rotate: 0 }
-                          : { scale: 0, rotate: -180 }
-                      }
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      viewport={{ once: true, amount: 0.5 }}
                       transition={{
                         delay: index * 0.15,
                         type: "spring",
@@ -174,8 +172,27 @@ export function ProcessSection() {
               ))}
             </motion.div>
           </motion.div>
+
           {/* Image - Right Side */}
+          {/* TODO: Add image section here if needed */}
+          {/* 
+          <motion.div
+            className="relative hidden lg:block"
+            variants={imageVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
+            <div className="sticky top-24">
+              <img 
+                src="/process-image.jpg" 
+                alt="Process illustration"
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
+          </motion.div>
+          */}
         </div>
+      </div>
     </section>
   );
 }

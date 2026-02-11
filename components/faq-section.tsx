@@ -6,56 +6,55 @@ import {
 } from "./ui/accordion";
 
 export function FAQSection() {
-const faqs = [
-  {
-    question: "I just joined the internship. How do I get started?",
-    answer:
-      "You will receive:\n• A welcome email\n• An invitation to the interns WhatsApp group\n• Orientation meeting link\n• Access to project materials and guidelines\nIf you do not receive these within a few days, contact the support team.",
-  },
+  const faqs = [
+    {
+      question: "I just joined the internship. How do I get started?",
+      answer:
+        "You will receive:\n• A welcome email\n• An invitation to the interns WhatsApp group\n• Orientation meeting link\n• Access to project materials and guidelines\nIf you do not receive these within a few days, contact the support team.",
+    },
 
-  {
-    question: "What if my payment is not successful?",
-    answer:
-      "Please try the following:\n• Use a different ATM/debit card\n• Switch your internet connection\n• Retry after a few minutes\nIf the issue continues, contact the support team for assistance.",
-  },
+    {
+      question: "What if my premium access payment is not successful?",
+      answer:
+        "Please try the following:\n• Use a different ATM/debit card\n• Switch your internet connection\n• Retry after a few minutes\nIf the issue continues, contact the support team for assistance.",
+    },
 
-  {
-    question: "How do I confirm that my payment was successful?",
-    answer:
-      "You will receive a payment receipt after a successful transaction. If you are unsure, send the receipt or transaction proof to the support team for confirmation.",
-  },
+    {
+      question: "How do I confirm that my payment was successful?",
+      answer:
+        "You will receive a payment receipt after a successful transaction. If you are unsure, send the receipt or transaction proof to the support team for confirmation.",
+    },
 
-  {
-    question: "Can I pay in installments?",
-    answer:
-      "Installment payments are not available. The program requires a one-time payment to secure your slot and access internship activities.",
-  },
+    {
+      question: "Can I pay in installments?",
+      answer:
+        "Installment payments are not available. The premium access requires a one-time payment to unlock all program benefits and mentorship features.",
+    },
 
-  {
-    question: "Can I get a refund?",
-    answer:
-      "Refunds are only possible if:\n• The internship has not started\n• You mistakenly paid more than once\n• You submitted a request before onboarding begins\n\nRefunds are not issued after the internship has commenced or for inactivity during the program.",
-  },
+    {
+      question: "Can I get a refund?",
+      answer:
+        "Refunds are only possible if:\n• The internship has not started\n• You mistakenly paid more than once\n• You submitted a request before onboarding begins\n\nRefunds are not issued after the internship has commenced or for inactivity during the program.",
+    },
 
-  {
-    question: "Who do I contact for payment or access issues?",
-    answer:
-      "Contact the support team and include:\n• Your full name\n• Your selected track\n• Proof of payment\n• Email used during registration\nThis helps resolve your issue quickly.",
-  },
+    {
+      question: "Who do I contact for payment or access issues?",
+      answer:
+        "Contact the support team and include:\n• Your full name\n• Your selected track\n• Proof of payment\n• Email used during registration\nThis helps resolve your issue quickly.",
+    },
 
-  {
-    question: "Can I join more than one track?",
-    answer:
-      "Yes, depending on your availability. However, we strongly recommend focusing on one track to get the best learning and practical experience during the internship.",
-  },
+    {
+      question: "Can I join more than one track?",
+      answer:
+        "Yes, depending on your availability. However, we strongly recommend focusing on one track to get the best learning and practical experience during the internship.",
+    },
 
-  {
-    question: "What benefits do Premium interns receive?",
-    answer:
-      "Premium interns who complete the internship requirements will:\n• Receive a certificate of completion\n• Get priority consideration for job and opportunity recommendations\n• Receive closer mentorship and project guidance during the program.",
-  },
-];
-
+    {
+      question: "What benefits do Premium interns receive?",
+      answer:
+        "Premium interns who complete the internship requirements will:\n• Receive a certificate of completion\n• Get priority consideration for job and opportunity recommendations\n• Receive closer mentorship and project guidance during the program.",
+    },
+  ];
 
   return (
     <section
