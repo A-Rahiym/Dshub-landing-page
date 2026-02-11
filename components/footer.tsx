@@ -39,7 +39,7 @@ export function Footer() {
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4 flex items-center gap-2">
                 <Code className="w-5 h-5 text-blue-300" />
-                About DSHub
+                About DSHub Internship
               </h3>
               <p className="text-xs sm:text-sm md:text-base text-blue-100 leading-relaxed">
                 A structured tech internship program combining real projects, mentor guidance, and hands-on experience to launch your career in technology.
