@@ -22,15 +22,15 @@ export function Navbar() {
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-16">
           {/* Logo */}
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <Image
+            {/* <Image
               src="/dshub_logo.svg"
               alt="DSHub Logo"
               width={18}
               height={18}
               className="sm:w-6 sm:h-6"
-            />
+            /> */}
             <span className="text-base sm:text-lg md:text-xl font-black text-white">
-              DSHub Intership
+              DSHub Internship
             </span>
           </div>
 

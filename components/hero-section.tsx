@@ -9,14 +9,14 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative pt-16 pb-12 px-4 sm:px-6 lg:px-8 bg-primary-light-blue overflow-hidden  mb-8"
+      className="relative pt-16 pb-12 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden mb-8"
     >
-      {/* Tech Background Pattern */}
+      {/* Tech Background Pattern
       <div className="absolute inset-0 opacity-5 z-0">
         <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230066CC' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }} />
-      </div>
+      </div> */}
 
       {/* ===== Subtle Animated Ambient Light ===== */}
       <div className="hero-ambient z-0" />
@@ -28,7 +28,7 @@ export function HeroSection() {
           backgroundImage: "url(/layout-bg.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.05,
+          opacity: 0.03,
         }}
       />
 
@@ -40,13 +40,13 @@ export function HeroSection() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-dark-blue leading-tight animate-float-up">
               Start Your Tech Career
               <br />
-              <span className="text-white">
+              <span className="text-primary-light-blue">
                 With Real Internship Experience
               </span>
             </h1>
 
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed animate-float-up"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed animate-float-up"
               style={{ animationDelay: "100ms" }}
             >
               Join DSHub Internship — a structured program where you work on
@@ -64,7 +64,7 @@ export function HeroSection() {
               <Button
                 asChild
                 size="lg"
-                className="w-full sm:w-auto bg-accent-yellow text-text-dark hover:bg-yellow-500 font-semibold rounded-lg transition-all duration-300 hover:scale-[1.04] active:scale-[0.97] shadow-lg hover:shadow-xl"
+                className="w-full sm:w-auto bg-accent-yellow text-text-dark hover:bg-yellow-500 font-semibold rounded-lg transition-all duration-300 hover:scale-[1.04] active:scale-[0.97]"
               >
                 <Link
                   href="https://forms.gle/jHzPbmqL5gwRhHmj9"
@@ -83,7 +83,7 @@ export function HeroSection() {
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
                 variant="outline"
-                className="w-full sm:w-auto h-11 sm:h-12 border-2 border-text-dark text-text-dark hover:bg-white font-semibold px-6 sm:px-8 rounded-lg bg-transparent text-sm sm:text-base whitespace-nowrap"
+                className="w-full sm:w-auto h-11 sm:h-12 border-2 border-primary-light-blue text-primary-light-blue hover:bg-primary-light-blue hover:text-white font-semibold px-6 sm:px-8 rounded-lg bg-transparent text-sm sm:text-base whitespace-nowrap"
               >
                 View Internship Roles
               </Button>

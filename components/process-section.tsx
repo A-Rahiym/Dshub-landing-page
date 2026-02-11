@@ -93,10 +93,6 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Timeline Layout */}
-        <div
-          ref={containerRef}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-        >
           {/* Timeline - Left Side */}
           <motion.div
             className="relative"
@@ -178,41 +174,8 @@ export function ProcessSection() {
               ))}
             </motion.div>
           </motion.div>
-
           {/* Image - Right Side */}
-          <motion.div
-            className="relative h-64 sm:h-80 md:h-96 lg:h-full lg:min-h-96"
-            variants={imageVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
-            <motion.img
-              src="/african-girl.jpg"
-              alt="DSHub Internship Process"
-              className="w-full h-full object-cover rounded-lg md:rounded-2xl shadow-xl"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            />
-
-            {/* Overlay accent */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-t from-primary-light-blue/10 to-transparent rounded-lg md:rounded-2xl"
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-            ></motion.div>
-
-            {/* Badge */}
-            <ImageBadge
-              title="Step-by-Step"
-              subtitle="Guided Process"
-              className="absolute -bottom-6 left-6"
-              delay={0}
-              bgColor="#3B82F6" // light blue badge
-            />
-          </motion.div>
         </div>
-      </div>
     </section>
   );
 }

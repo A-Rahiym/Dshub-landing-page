@@ -3,34 +3,65 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from './ui/accordion'
+} from "./ui/accordion";
 
 export function FAQSection() {
-  const faqs = [
-    {
-      question: 'What is the DSHub Bootcamp all about?',
-      answer:
-        'DSHub Bootcamp is a comprehensive program designed to equip learners with practical skills in technology and digital innovation. Our curriculum is structured around real-world projects, mentorship, and industry collaboration to ensure you\'re job-ready upon completion.',
-    },
-    {
-      question: 'Is this bootcamp suitable for complete beginners?',
-      answer:
-        'Yes! Our program is beginner-friendly with dedicated onboarding and foundational modules. You can also try Campedio for free on the Starter plan with up to 3 team members.',
-    },
-    {
-      question: 'Do I need any prior tech experience to join?',
-      answer:
-        'No prior experience is required! We welcome all learners, from complete beginners to those with some background. Our instructors are trained to support learners at all levels.',
-    },
-    {
-      question: 'How are the working hours structured?',
-      answer:
-        'The internship is flexible with core hours during business days. Most interns dedicate 20-30 hours per week to the program, allowing you to balance other commitments. Exact hours depend on your track and team arrangement.',
-    },
-  ]
+const faqs = [
+  {
+    question: "I just joined the internship. How do I get started?",
+    answer:
+      "You will receive:\n• A welcome email\n• An invitation to the interns WhatsApp group\n• Orientation meeting link\n• Access to project materials and guidelines\nIf you do not receive these within a few days, contact the support team.",
+  },
+
+  {
+    question: "What if my payment is not successful?",
+    answer:
+      "Please try the following:\n• Use a different ATM/debit card\n• Switch your internet connection\n• Retry after a few minutes\nIf the issue continues, contact the support team for assistance.",
+  },
+
+  {
+    question: "How do I confirm that my payment was successful?",
+    answer:
+      "You will receive a payment receipt after a successful transaction. If you are unsure, send the receipt or transaction proof to the support team for confirmation.",
+  },
+
+  {
+    question: "Can I pay in installments?",
+    answer:
+      "Installment payments are not available. The program requires a one-time payment to secure your slot and access internship activities.",
+  },
+
+  {
+    question: "Can I get a refund?",
+    answer:
+      "Refunds are only possible if:\n• The internship has not started\n• You mistakenly paid more than once\n• You submitted a request before onboarding begins\n\nRefunds are not issued after the internship has commenced or for inactivity during the program.",
+  },
+
+  {
+    question: "Who do I contact for payment or access issues?",
+    answer:
+      "Contact the support team and include:\n• Your full name\n• Your selected track\n• Proof of payment\n• Email used during registration\nThis helps resolve your issue quickly.",
+  },
+
+  {
+    question: "Can I join more than one track?",
+    answer:
+      "Yes, depending on your availability. However, we strongly recommend focusing on one track to get the best learning and practical experience during the internship.",
+  },
+
+  {
+    question: "What benefits do Premium interns receive?",
+    answer:
+      "Premium interns who complete the internship requirements will:\n• Receive a certificate of completion\n• Get priority consideration for job and opportunity recommendations\n• Receive closer mentorship and project guidance during the program.",
+  },
+];
+
 
   return (
-    <section id="faq" className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 md:px-6 lg:px-8 bg-white">
+    <section
+      id="faq"
+      className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 md:px-6 lg:px-8 bg-white"
+    >
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-16">
@@ -40,7 +71,11 @@ export function FAQSection() {
         </div>
 
         {/* Accordion */}
-        <Accordion type="single" collapsible className="space-y-2.5 sm:space-y-3 md:space-y-4">
+        <Accordion
+          type="single"
+          collapsible
+          className="space-y-2.5 sm:space-y-3 md:space-y-4"
+        >
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
@@ -58,5 +93,5 @@ export function FAQSection() {
         </Accordion>
       </div>
     </section>
-  )
+  );
 }
